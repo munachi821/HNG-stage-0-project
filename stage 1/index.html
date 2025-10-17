@@ -4,88 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article data-testid="test-profile-card" class="profile-card">
-      <figure class="avatar-section">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="User avatar"
-          data-testid="test-user-avatar"
-          class="avatar"
-        />
-      </figure>
+    <main class="main-wrapper">
+      <article data-testid="test-profile-card" class="profile-card">
+        <figure class="avatar-section">
+          <img
+            src=""
+            alt="User avatar"
+            data-testid="test-user-avatar"
+            class="avatar"
+          />
+        </figure>
 
-      <div class="info-section">
-        <header>
-          <h2 data-testid="test-user-name">Munachi Onyebuchi</h2>
-        </header>
+        <div class="info-section">
+          <header>
+            <h2 data-testid="test-user-name">Munachi Onyebuchi</h2>
+          </header>
 
-        <p data-testid="test-user-bio">
-          A passionate frontend developer learning React, Next.js, and modern
-          web patterns.
-        </p>
+          <p data-testid="test-user-bio" class="user-bio">
+            Frontend developer with 2 years of experience in React.js and
+            TailwindCSS, passionate about crafting interactive web experiences
+            with clean, modern interfaces.
+          </p>
 
-        <p>
-          Current Time (ms):
-          <span data-testid="test-user-time" id="user-time"></span>
-        </p>
+          <p class="user-time">
+            Current Time (ms):
+            <span data-testid="test-user-time" id="user-time"></span>
+          </p>
 
-        <nav aria-label="Social Links">
-          <ul data-testid="test-user-social-links" class="social-links">
-            <li>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-              >
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav aria-label="Social Links">
+            <ul data-testid="test-user-social-links" class="social-links">
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <section aria-label="Hobbies">
-          <h3>Hobbies</h3>
-          <ul data-testid="test-user-hobbies">
-            <li>Coding</li>
-            <li>Gaming</li>
-            <li>Music</li>
-          </ul>
-        </section>
+          <section class="hobbies">
+            <div aria-label="Hobbies">
+              <h3>Hobbies</h3>
+              <ul data-testid="test-user-hobbies" class="list">
+                <li>Building projects</li>
+                <li>Gaming</li>
+                <li>Watching anime</li>
+                <li>Learning new languages</li>
+              </ul>
+            </div>
 
-        <section aria-label="Dislikes">
-          <h3>Dislikes</h3>
-          <ul data-testid="test-user-dislikes">
-            <li>Delays</li>
-            <li>Unclean code</li>
-            <li>Slow internet</li>
-          </ul>
-        </section>
-      </div>
-    </article>
+            <div aria-label="Dislikes">
+              <h3>Dislikes</h3>
+              <ul data-testid="test-user-dislikes" class="list">
+                <li>Messy code</li>
+                <li>Unreliable internet</li>
+                <li>Procrastination</li>
+                <li>Wordpress</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
 
     <script src="script.js"></script>
   </body>
